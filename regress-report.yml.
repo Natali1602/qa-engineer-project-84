@@ -1,0 +1,25 @@
+---
+test-cases:
+  - summary: |
+      Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
+    status: pass
+
+  - summary: |
+      Проверка регистрации пользователя 
+    status: fail
+
+bugreports:
+  - summary: |
+      Проверка регистрации пользователя
+    environment: |
+      https://hexlet-products-store.vercel.app/
+    PC. Версия 122.0.6261.128 (Официальный сайт), (64 бит)
+    steps-to-reproduce: |
+    - Нажать на кнопку Don't have an account? Sign Up
+    - Выбрать Plane type, ввести Имя и нажать Continue
+    - Выбрать способ регистрации Continue with GitHub
+    - Ввести учетные данные
+    expected-result: |
+      Успешная регистрация 
+    actual-result: |
+      Бессконечное ожидание подтверждения доступа
