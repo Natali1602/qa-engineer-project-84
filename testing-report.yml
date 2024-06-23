@@ -1,0 +1,19 @@
+- summary: |
+    Проверка добавления товара в корзину
+  status: pass
+
+- summary: |
+    Поиск товара по ключевому слову
+  status: pass
+
+- summary: |
+    Проверка фильтра in stok
+  status: pass
+
+- summary: |
+    Проверка открытия карточки товара
+  status: pass
+
+- summary: |
+    Проверка оформления заказа
+  status: pass  
