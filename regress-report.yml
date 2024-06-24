@@ -1,7 +1,11 @@
 ---
+test-cases:
   - summary: |
       Проверка регистрации пользователя 
     status: fail
+  - summary: |
+      Корректность отображения языкового меню
+    status: pass
 
 bugreports:
   - summary: |
@@ -19,18 +23,13 @@ bugreports:
     actual-result: |
       Бессконечное ожидание подтверждения доступа
 
-- summary: |
-      Корректность отображения языкового меню
-    status: pass
-
-bugreports:
   - summary: |
       Корректность отображения языкового меню
     environment: |
       https://hexlet-products-store.vercel.app/
       PC. Версия 122.0.6261.128 (Официальный сайт), (64 бит)
     steps-to-reproduce: |
-      1. Нажимаем на Language
+      Нажимаем на Language
     expected-result: |
       Видим Русский и Английский языки без иконок
     actual-result: |
