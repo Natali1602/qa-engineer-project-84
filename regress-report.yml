@@ -41,7 +41,7 @@ bugreports:
   - summary: |
       Проверка оформления заказа
     environment: |
-      https://hexlet-products-store.vercel.app/
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/cart
       PC. Версия 122.0.6261.128 (Официальный сайт), (64 бит)
     steps-to-reproduce: |
       Добавить товар в Корзину
