@@ -6,6 +6,9 @@ test-cases:
   - summary: |
       Корректность отображения языкового меню
     status: pass
+  - summary: |
+      Проверка оформления заказа 
+    status: fail  
 
 bugreports:
   - summary: |
@@ -34,3 +37,17 @@ bugreports:
       Видим Русский и Английский языки без иконок
     actual-result: |
       Видим Русский и Английский языки без иконок
+
+  - summary: |
+      Проверка оформления заказа
+    environment: |
+      https://hexlet-products-store.vercel.app/
+      PC. Версия 122.0.6261.128 (Официальный сайт), (64 бит)
+    steps-to-reproduce: |
+      Добавить товар в Корзину
+      Нажать кнопку "Корзина" 
+      Нажать "Оформить заказ" 
+    expected-result: |
+      Зказа оформлен 
+    actual-result: |
+      При оформлении заказа возникает внутренняя ошибка сервера (500 Internal Server Error)
